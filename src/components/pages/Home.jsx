@@ -30,27 +30,27 @@ function Home() {
               <OutLineButton className="small">View more</OutLineButton>
             </Link>
           </div>
-          <MoviesList category ={category.movie} type={movieType.top_rate}/>
+          <MoviesList category ={category.movie} type={movieType.top_rated}/>
         </div>
       </div>
       <div className="section mb-3">
           <div className="section__header mb-2">
             <h2>Trending TV</h2>
-            <Link to={"/movie"}>
+            <Link to={"/tv"}>
               <OutLineButton className="small">View more</OutLineButton>
             </Link>
           </div>
-          <MoviesList category ={category.movie} type={tvType.popular}/>
+          <MoviesList category ={category.tv} type={tvType.popular}/>
         </div>
 
         <div className="section mb-3">
           <div className="section__header mb-2">
-            <h2>Top ate TV</h2>
-            <Link to={"/movie"}>
+            <h2>Top Rate TV</h2>
+            <Link to={"/tv"}>
               <OutLineButton className="small">View more</OutLineButton>
             </Link>
           </div>
-          <MoviesList category ={category.movie} type={tvType.popular}/>
+          <MoviesList category ={category.tv} type={tvType.popular}/>
         </div>
     </>
   )
