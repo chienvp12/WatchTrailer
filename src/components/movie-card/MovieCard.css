@@ -1,6 +1,7 @@
 @import url(../../Styles/_variables.css);
-.movie-card{
-   
+
+.movie-card {
+
     position: relative;
     background-position: top;
     background-repeat: no-repeat;
@@ -9,14 +10,16 @@
     border-radius: var(--border-radius);
     margin-bottom: 1rem;
 }
-.movie-card .btn{
+
+.movie-card .btn {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: tranform 0.3s ease, box-shadow 0.3s ease;
 }
-.movie-card::before{
+
+.movie-card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -28,10 +31,12 @@
     transition: opacity 0.3s ease;
     border-radius: var(--border-radius);
 }
-.movie-card:hover::before{
+
+.movie-card:hover::before {
     opacity: 0.8;
 }
-.movie-card:hover .btn{
+
+.movie-card:hover .btn {
     transform: translate(-50%, -50%) scale(1);
 
 }

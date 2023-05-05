@@ -11,7 +11,7 @@ import MoviesList from '../movie-list/Movieslist';
 function Home() {
   return (
     <>
-      <SlideShow/>
+      <SlideShow />
       <div className="container">
         <div className="section mb-3">
           <div className="section__header mb-2">
@@ -20,7 +20,7 @@ function Home() {
               <OutLineButton className="small">View more</OutLineButton>
             </Link>
           </div>
-          <MoviesList category ={category.movie} type={movieType.popular}/>
+          <MoviesList category={category.movie} type={movieType.popular} />
         </div>
 
         <div className="section mb-3">
@@ -30,17 +30,16 @@ function Home() {
               <OutLineButton className="small">View more</OutLineButton>
             </Link>
           </div>
-          <MoviesList category ={category.movie} type={movieType.top_rated}/>
+          <MoviesList category={category.movie} type={movieType.top_rated} />
         </div>
-      </div>
-      <div className="section mb-3">
+        <div className="section mb-3">
           <div className="section__header mb-2">
             <h2>Trending TV</h2>
             <Link to={"/tv"}>
               <OutLineButton className="small">View more</OutLineButton>
             </Link>
           </div>
-          <MoviesList category ={category.tv} type={tvType.popular}/>
+          <MoviesList category={category.tv} type={tvType.popular} />
         </div>
 
         <div className="section mb-3">
@@ -50,8 +49,10 @@ function Home() {
               <OutLineButton className="small">View more</OutLineButton>
             </Link>
           </div>
-          <MoviesList category ={category.tv} type={tvType.popular}/>
+          <MoviesList category={category.tv} type={tvType.top_rated} />
         </div>
+      </div>
+
     </>
   )
 }

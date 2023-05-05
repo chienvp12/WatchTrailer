@@ -1,6 +1,6 @@
 @import url(../../Styles/_variables.css);
 
-.modal{
+.modal {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,38 +15,42 @@
     opacity: 0;
     visibility: hidden;
 }
-.active{
+
+.active {
     opacity: 1;
     visibility: visible;
 }
-.modal__content{
+
+.modal__content {
     padding: 2rem;
-        background-color: var(--body-bg);
-        width: 50%;
-        opacity: 0;
-        transform: translateY(-250px);
-        transition: transform 0.6s ease, opacity 0.6s ease;
-        position: relative;
+    background-color: var(--body-bg);
+    width: 50%;
+    opacity: 0;
+    transform: translateY(-250px);
+    transition: transform 0.6s ease, opacity 0.6s ease;
+    position: relative;
 }
-.modal__content__close{
+
+.modal__content__close {
     position: absolute;
     right: 5px;
     top: 5px;
     font-size: 1.5rem;
     cursor: pointer;
 }
-.modal__content__close:hover{
+
+.modal__content__close:hover {
     color: var(--main-color);
 }
 
-.active > .modal__content{
+.active>.modal__content {
     opacity: 1;
     transform: translateY(0);
 }
 
 
-@media(min-width: 769px) and (max-width: 1023px){
-    .modal__content{
+@media(min-width: 769px) and (max-width: 1023px) {
+    .modal__content {
         width: 80%;
     }
 }

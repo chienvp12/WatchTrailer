@@ -10,16 +10,16 @@ import Routes from './config/Routes';
 import './App.css';
 
 function App() {
-    
+
     return (
         <BrowserRouter>
-            <Route render={props =>(
+            <Route render={props => (
                 <>
-                    <Header {...props}/>
+                    <Header {...props} />
                     <Routes />
                     <Footer />
                 </>
-            )}/>
+            )} />
         </BrowserRouter>
     )
 }

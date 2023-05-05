@@ -5,16 +5,16 @@
 
 
 
-@media(min-width: 769px) and (max-width: 1023px){
-    .movie-list.swiper-slide{
+@media(min-width: 769px) and (max-width: 1023px) {
+    .movie-list.swiper-slide {
         width: 30%;
     }
 
 }
-@media(max-width: 768px){
-    .movie-list.swiper-slide{
+
+@media(max-width: 768px) {
+    .movie-list.swiper-slide {
         width: 40%;
     }
 
 }
-
