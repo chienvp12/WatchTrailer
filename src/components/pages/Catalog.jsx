@@ -1,8 +1,23 @@
 import React from 'react'
-
+import PageHeader from '../page-header/PageHeader';
+import {category as cate} from '../../api/tmdbApi';
+import MovieGrid from '../movie-grid/MovieGrid'
+import { useParams } from 'react-router-dom/cjs/react-router-dom.js';
 function Catalog() {
+  const { category } = useParams();
+
+
   return (
-    <div></div>
+    <>
+            <PageHeader>
+                {category === cate.movie ? 'Movies' : 'TV Series'}
+            </PageHeader>
+            <div className="container">
+                <div className="section mb-3">
+                    <MovieGrid category={category}/>
+                </div>
+            </div>
+        </>
   )
 }
 
